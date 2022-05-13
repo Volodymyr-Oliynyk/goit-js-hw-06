@@ -14,4 +14,7 @@ const onInputChange = item => {
     item.currentTarget.value);
 };
 
-inputName.addEventListener('input', onInputChange);
+inputName.addEventListener(
+  'input',
+  onInputChange
+);

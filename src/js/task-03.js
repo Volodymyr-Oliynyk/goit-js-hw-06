@@ -13,11 +13,17 @@ const images = [
   },
 ];
 
-const imageItem = images.flatMap(image => 
-  `<li> <img src = ${image.url}, alt = ${image.alt}> </li> `);
+const imageItem = images.flatMap(
+  image =>
+    `<li> <img src = ${image.url}, alt = ${image.alt}> </li> `
+);
 console.log(imageItem);
 
-const galleryList = document.querySelector(".gallery")
+const galleryList =
+  document.querySelector('.gallery');
 console.log(galleryList);
 
-galleryList.insertAdjacentHTML("afterbegin", imageItem);
+galleryList.insertAdjacentHTML(
+  'afterbegin',
+  imageItem
+);
