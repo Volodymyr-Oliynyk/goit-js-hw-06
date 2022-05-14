@@ -14,16 +14,9 @@ const images = [
 ];
 
 const imageItem = images.flatMap(
-  image =>
-    `<li> <img src = ${image.url}, alt = ${image.alt}> </li> `
+  image => `<li> <img src = ${image.url}, alt = ${image.alt}> </li>`
 );
-console.log(imageItem);
 
-const galleryList =
-  document.querySelector('.gallery');
-console.log(galleryList);
+const galleryList = document.querySelector('.gallery');
 
-galleryList.insertAdjacentHTML(
-  'afterbegin',
-  imageItem
-);
+galleryList.insertAdjacentHTML('afterbegin', imageItem);
